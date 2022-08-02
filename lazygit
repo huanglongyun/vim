@@ -1,0 +1,34 @@
+day25
+
+目标：学习lazygit
+
+https://github.com/jesseduffield/lazygit
+
+1. 安装 （win环境）
+
+    1. 打开PowerShell 终端
+    2. 安装scoop
+    ```
+        Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
+        irm get.scoop.sh | iex
+    ```
+    2. 安装 lazygit
+    ```
+        # Add the extras bucket
+        scoop bucket add extras
+
+        # Install lazygit
+        scoop install lazygit
+    ```
+    3. 开启 lazygit
+    ```
+    lazygit
+    ```
+    4. 此时会发现输入的名字有点长，修改别名,未修改成功，
+    ```
+    echo "alias lg='lazygit'" >> ~/.zshrc
+    ```
+
+    5. 操作
+        add 空格
+        commit c
